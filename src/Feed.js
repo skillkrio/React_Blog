@@ -1,9 +1,7 @@
 import Post from "./Post";
-import DataContext from "./context/DataContext";
-import { useContext } from "react";
+import { useStoreState } from "easy-peasy";
 const Feed = () => {
-  console.log("Feed");
-  const { searchResults } = useContext(DataContext);
+  const searchResults = useStoreState((state) => state.searchResults);
   return (
     <>
       {searchResults.map((post) => (

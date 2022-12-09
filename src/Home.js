@@ -1,10 +1,8 @@
 import Feed from "./Feed";
-import DataContext from "./context/DataContext";
-import { useContext } from "react";
+import { useStore, useStoreState } from "easy-peasy";
 
-const Home = () => {
-  console.log("Home");
-  const { searchResults, isLoading, fetchError } = useContext(DataContext);
+const Home = ({ fetchError, isLoading }) => {
+  const searchResults = useStoreState((state) => state.searchResults);
   return (
     <main className="Home">
       {isLoading && <p className="statusMsg">Loading posts...</p>}

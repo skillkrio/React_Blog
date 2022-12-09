@@ -2,9 +2,9 @@
   "posts": [
     {
       "id": 1,
-      "title": "newPost",
-      "datetime": "December 08, 2022 7:11:59 PM",
-      "body": "Something"
+      "title": "something",
+      "datetime": "December 09, 2022 7:44:26 PM",
+      "body": "something"
     }
   ]
 }

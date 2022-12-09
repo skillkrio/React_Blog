@@ -1,7 +1,6 @@
 import { Link } from "react-router-dom";
 
 const Post = ({ post }) => {
-  console.log("Post");
   return (
     <article className="post">
       <Link to={`post/${post.id}`}>
